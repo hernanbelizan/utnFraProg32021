@@ -9,72 +9,42 @@
 // Por ejemplo, si $num = 43 debe mostrarse por pantalla “cuarenta y tres”.
 
 //tener switch de unidades y de decenas
+
 $num = random_int(20, 60);
+//$num = 60;
 $numString = (string)$num;
-$unidades = substr($numString,0);
-$decenas = substr($numString,-1);
+$miArr = str_split($numString);
+
+$unidades = array('1'=>'y uno','2'=>'y dos','3'=>'y tres','4'=>'y cuatro','5'=>'y cinco','6'=>'y seis','7'=>'y siete','8'=>'y ocho','9'=>'y nueve','0'=>''); 
+$decenas = array('2'=>'veinte','3'=>'treinta','4'=>'cuarenta','5'=>'cincuenta','6'=>'sesenta');
+
+// var_dump($numString);
+// var_dump($decenas);
+// var_dump($unidades);
 
 $unidad;
 $decena;
 
-switch ($unidades) {
-    case '1':
-        $unidad = " y uno";
-        break;
-    case '2':
-        $unidad = " y dos";
-        break;
-    case '3':
-        $unidad = " y tres";
-        break;
-    case '4':
-        $unidad = " y cuatro";
-        break;
-    case '5':
-        $unidad = " y cinco";
-        break;
-    case '6':
-        $unidad = " y seis";
-        break;
-    case '7':
-        $unidad = " y siete";
-        break;
-    case '8':
-        $unidad = " y ocho";
-        break;
-    case '9':
-        $unidad = " y nueve";
-        break;
-    default:
-        break;
+// var_dump($unidad);
+// var_dump($decena);
+
+foreach ($decenas as $key => $value) {
+    # code...
+    if($miArr[0] == $key){
+        $decena = $value;
+    }
+    
 }
 
-switch ($decenas) {
-    case '2':
-        $decena = "veinte";
-        break;
-
-    case '3':
-        $decena = "treinta";
-        break;
-
-    case '4':
-        $decena = "cuarenta";
-        break;
-
-    case '5':
-        $decena = "ciencuenta";
-        break;
-
-    case '6':
-        $decena = "sesenta";
-        break;
-
-    default:
-        break;
+foreach ($unidades as $key => $value) {
+    # code...
+    if($miArr[1] == $key){
+        $unidad = $value;
+    }
+    
 }
 
-echo $decena . $unidad;
+echo $decena ." ".  $unidad;
 
 
 
