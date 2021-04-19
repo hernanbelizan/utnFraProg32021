@@ -19,15 +19,21 @@ $lapicera3 = ["color"=>'Negro',"marca"=>'Faber Castel',"trazo"=>'Fino',"precio"=
 
 
 //Mostrar
-
+echo "Lapicera 1" ."<br/>";
 mostrarLapicera($lapicera1);
+echo "<br/>";
+echo "Lapicera 2" . "<br/>";
 mostrarLapicera($lapicera2);
+echo "<br/>";
+echo "Lapicera 3" . "<br/>";
 mostrarLapicera($lapicera3);
+echo "<br/>";
+
 
 function mostrarLapicera($arrayLapicera){
 
     foreach ($arrayLapicera as $key => $value) {
-        echo $key . " " . $value . "<br/>";
+        echo $key . " -->" . $value . "<br/>";
     }
 }
 
