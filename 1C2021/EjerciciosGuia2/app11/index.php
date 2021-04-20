@@ -7,14 +7,9 @@
 
 include "libreria/funciones.php";
 
+$arrayNumeros = array(1,2,3,4);
+$arrayPotencias = array(1,2,3,4);
 
-$miArray = array(1,2,3,4);
-
-foreach ($miArray as $value) {
-    # code...
-    echo "<br>";
-    echo obtenerPotencia($value);
-    echo "<br>";
-}
+mostrarPotencias($arrayNumeros,$arrayPotencias);
 
 ?>
