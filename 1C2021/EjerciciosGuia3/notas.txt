@@ -1,0 +1,8 @@
+les recomiendo que el proyecto de hoy sea de la siguiente forma
+proyecto
+->archivosJson
+->imagenes
+->clases
+->funciones
+index.php con los switch para cado request method
+
