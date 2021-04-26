@@ -7,7 +7,7 @@
 //de las letras del Array.
 //Ejemplo: Se recibe la palabra “HOLA” y luego queda “ALOH”
 
-include "libreria/funciones.php";
+include_once "lib/funciones.php";
 
 $arrayIn = array('H','O','L','A');
 
